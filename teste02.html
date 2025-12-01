@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Completa com IA e HTML</title>
+
+    <!-- Ligação com o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Página Completa Gerada com Ajuda de IA</h1>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#tabela">Tabela</a></li>
+                <li><a href="#formulario">Formulário</a></li>
+            </ul>
+        </nav>
+
+        <h2 id="inicio">Início</h2>
+    </header>
+
+    <hr>
+
+    <section id="sobre">
+        <h2>Sobre o Projeto</h2>
+
+        <p>
+            Este é um exemplo completo de página HTML construída com auxílio de uma
+            <strong>Inteligência Artificial</strong>, demonstrando diversas funcionalidades
+            essenciais. A IA pode sugerir melhorias, reorganizar estruturas, corrigir
+            erros e aprimorar <em>acessibilidade</em>.
+        </p>
+
+        <p>
+            Aqui temos um parágrafo com <strong>negrito</strong> e <em>itálico</em>, elementos básicos da
+            formatação inline.
+        </p>
+
+        <h3>Lista simples</h3>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <h3>Imagem de exemplo</h3>
+        <img src="imagens/exemplo.jpg" alt="Imagem ilustrativa" class="imagem-exemplo">
+    </section>
+
+    <hr>
+
+    <section id="tabela">
+        <h2>Exemplo de Tabela</h2>
+
+        <table>
+            <caption>Tabela de Produtos</caption>
+
+            <colgroup>
+                <col class="col1">
+                <col class="col2">
+            </colgroup>
+
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+
+            <tr>
+                <td>Monitor</td>
+                <td>R$ 800,00</td>
+            </tr>
+
+            <tr>
+                <td>Teclado</td>
+                <td>R$ 120,00</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="formulario">
+        <h2>Formulário de Contato</h2>
+
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Entre em contato</legend>
+
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto">
+                    <optgroup label="Atendimento">
+                        <option value="duvida">Dúvida</option>
+                        <option value="reclamacao">Reclamação</option>
+                    </optgroup>
+
+                    <optgroup label="Outros">
+                        <option value="elogio">Elogio</option>
+                        <option value="sugestao">Sugestão</option>
+                    </optgroup>
+                </select>
+
+                <label for="cidade">Cidade:</label>
+                <input list="listaCidades" id="cidade" name="cidade">
+                <datalist id="listaCidades">
+                    <option value="Rio de Janeiro">
+                    <option value="São Paulo">
+                    <option value="Cabo Frio">
+                    <option value="Salvador">
+                </datalist>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+
+                <label for="qtd">Quantidade desejada:</label>
+                <input type="number" id="qtd" name="qtd" min="1" max="10" oninput="resultado.value = qtd.value">
+                <output name="resultado">1</output>
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <p>Exemplo desenvolvido com apoio de Inteligência Artificial.</p>
+
+        <p>Visite:
+            <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
